@@ -281,7 +281,8 @@ async function predictWebcam() {
       
       // 顔向きと画面の交差点の計算：
       const dist = distanceToCamera 
-      const pixel_cm = videoWidth / 10　// 端末のサイズ、カメラの焦点距離に応じて校正が必要
+      // const pixel_cm = videoWidth / 10　// 端末のサイズ、カメラの焦点距離に応じて校正が必要
+      const pixel_cm = document.getElementById("pixelcm").value;// 端末のサイズ、カメラの焦点距離に応じて校正が必要
       const o_rx = -0.35 // 上下向きのオフセット
       const o_ry = 0
       const r_rx = 1 // 上下向きの敏感度
