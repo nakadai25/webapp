@@ -470,6 +470,8 @@ function drawBlendShapes(el, blendShapes) {
 
   // console.log(blendShapes[0])
 
+  // MediaPipeが提供した特徴推定スコア の表示　（FaceMeshV2のBlendShape）
+  // 
   let htmlMaker = ""
   blendShapes[0].categories.map((shape) => {
     htmlMaker += `
